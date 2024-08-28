@@ -1,8 +1,8 @@
 <div class="container-main">
   <h2>Angular Gen AI using npm i  transformers.js</h2>
   <div *ngIf="!isModalLoading()">
+    <div>Write your review here: </div>
     <textarea #reviewEle name="reviewText" cols="80" rows="5" [(ngModel)]="reviewText"></textarea>
-    {{isCalc()}}
     <div *ngIf="!isCalc(); else calc">
       {{reviewValue | json}}
     </div>

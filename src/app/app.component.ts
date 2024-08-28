@@ -15,7 +15,7 @@ export class AppComponent implements AfterViewInit {
   title = 'angular-gen-ai';
   isModalLoading = signal(true);
   isCalc = signal(false);
-  reviewText = model('I love angular !');
+  reviewText = model('I love this product !');
   textClassificationPipeline: TextClassificationPipeline;
   @ViewChild("reviewEle", {static: false}) reviewEle: ElementRef;
   reviewValue: any;
